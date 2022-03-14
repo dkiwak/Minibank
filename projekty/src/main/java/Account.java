@@ -1,3 +1,4 @@
+import javax.security.auth.login.AccountNotFoundException;
 import java.util.Scanner;
 
 public class Account {
@@ -40,6 +41,8 @@ public class Account {
             balance= scanner.nextInt();
 
         }
-
+        public void showAccount(){
+        System.out.println("Account number is: " + accountNo + " Name is: " + accountName + " Surname is: " + accountSurname + " Your Balance is: " + balance);
+    }
     }
 
